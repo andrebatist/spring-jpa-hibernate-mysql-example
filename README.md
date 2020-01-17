@@ -1,6 +1,7 @@
 Spring Hibernate OneToOne example
 
 https://www.youtube.com/watch?v=qYTSCi6bh00&feature=emb_logo
+https://www.youtube.com/watch?v=1SIkBduGXeE&t=4s
 
 # Spring Data JPA with Hibernate using MySql Example
 This project depicts the Spring Boot Example with Spring Data JPA with Hibernate using MySql Example.
