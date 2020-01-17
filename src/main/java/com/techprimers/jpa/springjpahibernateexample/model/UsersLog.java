@@ -12,18 +12,22 @@ public class UsersLog {
 
     private String log;
 
-    @Column(name = "user_id")
-    private Integer userId;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
+    private Users users;
+
+//    @Column(name = "user_id")
+//    private Integer userId;    one to many
 
     public UsersLog() {
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Users getUsers() {
+        return users;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUsers(Users users) {
+        this.users = users;
     }
 
     public Integer getId() {

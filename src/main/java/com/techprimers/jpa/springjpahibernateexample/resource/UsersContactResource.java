@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RequestMapping("/rest/userscontact")
@@ -43,7 +42,7 @@ public class UsersContactResource {
         UsersLog usersLog2 = new UsersLog();
         usersLog2.setLog("HI Viewers");
 
-        users.setUsersLogs(Arrays.asList(usersLog, usersLog2));
+      //  users.setUsersLogs(Arrays.asList(usersLog, usersLog2));
         usersContactRepository.save(usersContact);
         return usersContactRepository.findAll();
     }

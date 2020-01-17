@@ -1,7 +1,6 @@
 package com.techprimers.jpa.springjpahibernateexample.model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "users", catalog = "test")
@@ -16,7 +15,7 @@ public class Users {
     private Integer salary;
     private String teamName;
 
-    @OneToMany(cascade = CascadeType.ALL)
+/*    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private List<UsersLog> usersLogs;
 
@@ -26,7 +25,9 @@ public class Users {
 
     public void setUsersLogs(List<UsersLog> usersLogs) {
         this.usersLogs = usersLogs;
-    }
+    }*/
+
+
 
     public Users() {
     }
